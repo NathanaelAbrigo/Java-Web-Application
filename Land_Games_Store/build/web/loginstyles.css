@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 1, 2022, 1:12:06 PM
+    Author     : Dwight Kenneth
+*/
+
+body {
+    background-color: #D0A17E;
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+h2 {
+    text-align: center;
+}
+ 
+form {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+ 
+.container{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 25%;
+    margin: 50px auto;
+    margin-top: 250px;
+    padding: 10px 10px 20px 10px
+}
+ 
+.username-password, a, button {
+    width: 100%;
+    margin: 0;
+    max-width: 300px;
+}
+ 
+.username-password {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: black;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+   
+.username-password:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: black;
+}
+   
+.username-password::placeholder {
+    color: black;
+}
+   
+.username-password:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}  
+
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #dedeed;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+button:hover {
+    background-color: #570026   ;
+    box-shadow: 0px 15px 20px #1b1b32;
+    color: #dedeed;
+    transform: translateY(-7px);
+}
+ 
+button:active {
+    transform: translateY(-1px);
+}
+ 
+a {
+    color: black;
+    text-decoration: none;
+    padding-left: 120px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+ 
+a:hover {
+    color: gray;
+    text-decoration:none;
+    cursor:pointer;  
+}
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #F2E1AE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin-left: -10px;
+}
+
+.navtitle {
+    text-align: center;
+    padding: 0.2rem;
+    margin-left: 1rem;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logout {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0 0.2rem;
+}
+
+.logout:hover {
+   
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.signup{
+    color: black;
+}

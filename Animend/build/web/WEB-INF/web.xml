@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <listener>
+        <listener-class>controller.MyContextListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>lexName</param-name>
+        <param-value>Lex Zedrick M. Lorenzo</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dwightName</param-name>
+        <param-value>Dwight Kenneth T. Cruz</param-value>
+    </context-param>
+    <context-param>
+        <param-name>lexEmail</param-name>
+        <param-value>lexzedrick.lorenzo.cics@ust.edu.ph</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dwightEmail</param-name>
+        <param-value>dwightkenneth.cruz.cics@ust.edu.ph</param-value>
+    </context-param>
+    <context-param>
+        <param-name>lexNum</param-name>
+        <param-value>0922-587-9489</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dwightNum</param-name>
+        <param-value>0915-328-4230</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>HomepageServlet</servlet-name>
+        <servlet-class>controller.HomepageServlet</servlet-class>
+        <init-param>
+            <description>Top 1 Title</description>
+            <param-name>T1T</param-name>
+            <param-value>Bleach: Sennen Kessen-hen</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 1 Url</description>
+            <param-name>T1U</param-name>
+            <param-value>https://tinyurl.com/mumkdkpj</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 2 Title</description>
+            <param-name>T2T</param-name>
+            <param-value>Chainsaw Man</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 2 Url</description>
+            <param-name>T2U</param-name>
+            <param-value>https://tinyurl.com/bdfx4der</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 3 Title</description>
+            <param-name>T3T</param-name>
+            <param-value>Spy x Family Part 2</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 3 Url</description>
+            <param-name>T3U</param-name>
+            <param-value>https://tinyurl.com/48kr3xmr</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 4 Title</description>
+            <param-name>T4T</param-name>
+            <param-value>One Piece</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 4 Url</description>
+            <param-name>T4U</param-name>
+            <param-value>https://tinyurl.com/2s3bbu62</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 5 Title</description>
+            <param-name>T5T</param-name>
+            <param-value>Mob Psycho 100 III</param-value>
+        </init-param>
+        <init-param>
+            <description>Top 5 Url</description>
+            <param-name>T5U</param-name>
+            <param-value>https://tinyurl.com/4d2xfca8</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>AfterLogin</servlet-name>
+        <servlet-class>controller.AfterLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>controller.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomepageServlet</servlet-name>
+        <url-pattern>/homepage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AfterLogin</servlet-name>
+        <url-pattern>/AfterLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>register.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
